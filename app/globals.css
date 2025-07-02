@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Vietnamese text optimization */
+  .vietnamese-text {
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+      "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    line-height: 1.6;
+    letter-spacing: 0.025em;
+  }
+
+  /* Ensure proper spacing for Vietnamese diacritics */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: 1.3;
+    letter-spacing: 0.025em;
+  }
+
+  p {
+    line-height: 1.7;
+    letter-spacing: 0.025em;
+  }
+
+  /* Fix for Vietnamese characters in buttons */
+  button {
+    line-height: 1.5;
+    letter-spacing: 0.025em;
+  }
+}
+
+@layer components {
+  .text-gradient {
+    @apply bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent;
+  }
+
+  .btn-gradient {
+    @apply bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white shadow-lg transition-all duration-300;
+  }
+
+  .card-glass {
+    @apply bg-white/80 backdrop-blur-sm border-0 shadow-lg hover:shadow-xl transition-all duration-300;
+  }
+}
