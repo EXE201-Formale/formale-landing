@@ -16,7 +16,7 @@ const inter = Inter({
   display: "swap",
 })
 
-const APK_DOWNLOAD_URL = "https://expo.dev/artifacts/eas/vhLUrmZv1taSfsReWw6CYt.apk" // Replace with your actual APK URL
+const APK_DOWNLOAD_URL = "https://expo.dev/artifacts/eas/th1GRuZg9SSxzTzeYQPE.apk" // Replace with your actual APK URL
 
 const features = [
   {
@@ -45,22 +45,22 @@ const screenshots = [
   {
     id: 1,
     title: "Trang Chủ",
-    image: "/placeholder.svg?height=600&width=300",
+    image: "/images/screenshot1.jpg",
   },
   {
     id: 2,
     title: "AI Gợi Ý",
-    image: "/placeholder.svg?height=600&width=300",
+    image: "/images/screenshot2.jpg",
   },
   {
     id: 3,
-    title: "Cửa Hàng",
-    image: "/placeholder.svg?height=600&width=300",
+    title: "Kho Đồ",
+    image: "/images/screenshot3.jpg",
   },
   {
     id: 4,
     title: "Hồ Sơ",
-    image: "/placeholder.svg?height=600&width=300",
+    image: "/images/screenshot4.jpg",
   },
 ]
 
