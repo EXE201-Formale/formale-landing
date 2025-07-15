@@ -16,7 +16,7 @@ const inter = Inter({
   display: "swap",
 })
 
-const APK_DOWNLOAD_URL = "https://expo.dev/artifacts/eas/th1GRuZg9SSxzTzeYQPE.apk" // Replace with your actual APK URL
+const APK_DOWNLOAD_URL = "https://expo.dev/artifacts/eas/7za6bV63QmWwADp1cuALwi.apk" // Replace with your actual APK URL
 
 const features = [
   {
