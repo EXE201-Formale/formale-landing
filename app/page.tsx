@@ -114,7 +114,7 @@ export default function Component() {
   }
 
   return (
-    <div className={`min-h-screen bg-white overflow-hidden ${inter.className}`}>
+    <div className={`min-h-screen bg-gradient-to-br from-indigo-400 via-purple-400 to-pink-400 overflow-hidden ${inter.className}`}>
       {/* Floating Stickers - Distributed around sides */}
       {/* Left side stickers */}
       <FloatingSticker delay={0} duration={4}>
@@ -171,7 +171,7 @@ export default function Component() {
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8 }}
-        className="relative z-10 p-6 border-b border-gray-100"
+        className="relative z-10 p-6 border-b border-gray-100 bg-white"
       >
         <nav className="flex items-center justify-between max-w-6xl mx-auto">
           <motion.div className="flex items-center space-x-2" whileHover={{ scale: 1.05 }}>
@@ -325,7 +325,7 @@ export default function Component() {
       </section>
 
       {/* Features Section */}
-      <section className="relative z-10 px-6 py-20 bg-gray-50">
+      <section className="relative z-10 px-6 py-20">
         <div className="max-w-6xl mx-auto">
           <motion.div
             initial={{ y: 50, opacity: 0 }}
@@ -370,7 +370,7 @@ export default function Component() {
       </section>
 
       {/* CTA Section */}
-      <section className="relative z-10 px-6 py-20 bg-white">
+      <section className="relative z-10 px-6 py-20">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div
             initial={{ y: 50, opacity: 0 }}
